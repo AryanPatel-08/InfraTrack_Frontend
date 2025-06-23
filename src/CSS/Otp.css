@@ -1,0 +1,250 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-Screen Wrapper */
+.otp-wrapper {
+    display: flex;
+    height: 100vh; /* Full screen height */
+    overflow: hidden; /* Prevent scrollbars */
+    margin-top: -60px;
+}
+/* Increase otp-content width */
+.otp-content {
+    width: 35%; /* Increased from 35% */
+    padding: 40px; /* Added more padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    
+}
+
+/* Adjust otp-userset for better responsiveness */
+.otp-userset {
+    width: 100%;
+    max-width: 600px; /* Increased max-width */
+    /* text-align: center; */
+    font-size: 30px;
+
+}
+
+/* Make headings bigger */
+.otp-userheading h3 {
+    font-size: 28px; /* Larger heading */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.otp-userheading h4 {
+    font-size: 16px; /* Larger subtitle */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Increase logo size */
+.otp-logo img {
+    max-width: 420px; /* Adjust logo size as needed */
+    height: auto;
+    
+}
+
+.otp-logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+/* Increase input field size */
+/* .form-login input {
+
+    padding: 12px; 
+
+    /* text-align: center;
+    letter-spacing: 3px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase; 
+
+} */
+
+/* Increase button size */
+.btn-otp {
+    font-size: 18px; /* Larger text */
+    padding: 14px; /* Bigger button */
+}
+
+/* Adjust right section width */
+.otp-img {
+    width: 60%; /* Reduced slightly to balance */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* Input Fields */
+/* .form-login {
+    margin-bottom: 30px;
+}
+
+.form-login label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form-addons,
+.pass-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.form-addons input,
+.pass-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+}
+
+.form-addons img {
+    width: 30px;
+    height: 21px;
+}
+
+
+.toggle-password {
+    cursor: pointer;
+    padding: 5px;
+    color: gray;
+} */
+
+/* Forgot Password */
+.alreadyuser h4 {
+    text-align: right;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.alreadyuser h4 a {
+    text-decoration: none;
+    color: #ff7f2a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.alreadyuser h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Sign In Button */
+.btn-otp {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f2a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-otp:hover {
+    background-color: #e66a1a;
+}
+
+/* Right Section (Background Image) - 65% */
+.otp-img {
+    width: 65%;
+    height: 100vh; /* Full height */
+    background: url("../images/construction.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .otp-wrapper {
+        flex-direction: column;
+    }
+    
+    .otp-content {
+        width: 100%;
+        padding: 30px;
+        box-shadow: none;
+    }
+
+    .otp-img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .otp-content {
+        padding: 20px;
+    }
+
+    .otp-userset {
+        max-width: 350px;
+    }
+}
+
+
+
+
+
+/* OTP Verification CSS */
+
+/* OTP Input Box Styling */
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.otp-box {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #d1d5db; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    outline: none;
+    background: transparent;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.otp-box:focus {
+    border-color: #4a90e2; /* Blue border on focus */
+    box-shadow: 0px 0px 8px rgba(74, 144, 226, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .otp-box {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

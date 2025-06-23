@@ -1,0 +1,148 @@
+/* Container */
+.quotation-detail-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Button */
+.download-pdf-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.download-pdf-btn:hover {
+  background-color: #45a049;
+}
+
+/* Main Card */
+.quotation-detail-card {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.quotation-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Quotation Info */
+.quotation-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.quotation-section {
+  width: 30%;
+}
+
+.info-title {
+  font-weight: bold;
+  color: #555;
+}
+
+.info-value {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Table */
+.quotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.quotation-table-header {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.quotation-table th,
+.quotation-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.quotation-table th {
+  font-size: 16px;
+  color: #333;
+}
+
+.quotation-table td {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Order Tax */
+.amount {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Order Tax */
+.order-tax {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* Total Value */
+.total-value {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Terms and Conditions */
+.terms-and-conditions {
+  margin-top: 20px;
+}
+
+.terms-and-conditions .info-title {
+  font-weight: bold;
+  color: #555;
+}
+
+.terms-and-conditions .info-value {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Signature */
+.signature {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.signature p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}

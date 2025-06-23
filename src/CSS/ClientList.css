@@ -1,0 +1,403 @@
+/* Wrapper to ensure sidebar does not overlap */
+.client-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Main Content */
+.client-content {
+    flex-grow: 1;
+    padding: 30px;
+    margin-left: 250px;
+    background-color: #f9f9f9;
+    max-width: 1280px;
+    overflow-x: hidden;
+}
+
+/* Page Header */
+.client-header {
+    margin-bottom: 20px;
+}
+
+.client-header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.client-header p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Filter & Button Section */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Date Filters */
+.date-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.date-picker {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 160px;
+}
+
+/* Table Styling */
+.client-table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.client-table {
+    min-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.client-table th,
+.client-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.client-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #444;
+}
+
+.client-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.view-id-btn {
+    background-color: #007bff;
+    /* Bootstrap blue */
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.view-id-btn:hover {
+    background-color: #0056b3;
+}
+
+.view-id-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
+
+/* Client Image */
+.client-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Action Icons */
+
+.client-action-icons {
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 15px;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+    max-width: 50%;
+    max-height: 100vh;
+    /* Ensure it fits without scrolling */
+    overflow: hidden;
+    /* Hide scrollbar */
+}
+
+.id-proof-img {
+    max-width: 100%;
+    max-height: 90vh;
+    /* Fit the screen without scrolling */
+    border-radius: 5px;
+}
+
+/* ❌ Close Button (Move to Right Corner) */
+.close-btn {
+    position: absolute;
+    top: 0px;
+    /* Move slightly above the modal */
+    right: 0px;
+    /* Move outside the modal */
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    background: black;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Search box and Add User button */
+.header-controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Pagination Code */
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adds spacing when wrapping */
+}
+
+/* Left Section: Tasks per page */
+.pagination-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Right Section: Page Navigation */
+.pagination-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination-label,
+.pagination-info {
+    font-size: 14px;
+    color: #333;
+}
+
+.rows-per-page {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page-input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+.pagination-btn:disabled {
+    background-color: transparent !important;
+    color: #ccc !important;
+    opacity: 1 !important;
+    cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .client-content {
+        margin-left: 200px;
+        /* Adjust sidebar width */
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-filters {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .client-wrapper {
+        flex-direction: column;
+    }
+
+    .client-content {
+        margin-left: 0;
+    }
+
+    .date-filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .date-picker {
+        width: 100%;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .modal-content {
+        width: 90vw;
+        /* Full width on mobile */
+        max-width: none;
+        padding: 10px;
+    }
+
+    .client-action-icons {
+        margin-left: 0;
+        /* Remove unnecessary left margin */
+    }
+
+    .view-id-btn {
+        display: block;
+        width: fit-content;
+        /* Ensure it wraps around the text */
+    }
+
+    .pagination-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pagination-left,
+    .pagination-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .table-responsive {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .pagination-left {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pagination-right {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .pagination-btn {
+        font-size: 16px;
+    }
+
+    .page-input {
+        width: 40px;
+        font-size: 14px;
+    }
+}
+
+
+/* 📱 Mobile View Adjustments */
+@media screen and (max-width: 600px) {
+
+    .id-proof-img {
+        max-height: 75vh;
+    }
+
+    .close-btn {
+        top: 0px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .pagination-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .rows-per-page,
+    .page-input {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+}

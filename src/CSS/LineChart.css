@@ -1,0 +1,76 @@
+.line-chart-wrapper {
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.line-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.line-chart-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.line-chart-select-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.line-chart-select {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.line-chart-select:focus {
+    border-color: rgb(255, 164, 58);
+}
+
+.line-chart-container {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .line-chart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .line-chart-title {
+        font-size: 1rem;
+    }
+
+    .line-chart-select {
+        width: 100%;
+    }
+}
+
+.line-chart-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.year-period {
+  font-size: 14px;
+  color: #888;
+}

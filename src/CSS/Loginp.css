@@ -1,0 +1,163 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Full-Screen Wrapper */
+.login-main-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    margin-top: -60px;
+}
+
+/* Left Section (Login Form) */
+.login-content {
+    width: 35%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.login-userset {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-userheading h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.login-userheading h4 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-logo img {
+    max-width: 420px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Input Fields */
+.form-login {
+    margin-bottom: 18px;
+}
+
+.form-login label {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.input-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Password Toggle Icon */
+.password-toggle {
+    font-size: 16px;
+}
+
+/* Forgot Password */
+.alreadyuser h4 {
+    text-align: right;
+    font-size: 14px;
+}
+
+.alreadyuser h4 a {
+    text-decoration: none;
+    color: #ff7f2a;
+    font-weight: bold;
+}
+
+.alreadyuser h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Sign In Button */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f2a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #e66a1a;
+}
+
+/* Right Section (Background Image) */
+.login-img {
+    width: 65%;
+    height: 100vh;
+    background: url("../images/construction.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login-content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .login-img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-content {
+        padding: 20px;
+    }
+
+    .login-userset {
+        max-width: 350px;
+    }
+}
